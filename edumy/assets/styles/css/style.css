@@ -2,4 +2,51 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+body > header {
+  width: 100vw;
+  height: 65vh;
+  background-image: url("assets/img/img-header.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5));
+}
+body > header section:first-of-type {
+  margin: auto;
+  height: 14vh;
+  width: 100vw;
+  border-bottom: rgba(255, 255, 255, 0.25) solid 1px;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+}
+body > header section:first-of-type figure {
+  grid-column: 1/2;
+}
+body > header section:first-of-type figure figcaption p {
+  color: white;
+  text-transform: uppercase;
+}
+body > header section:first-of-type nav:first-of-type {
+  grid-column: 2/3;
+}
+body > header section:first-of-type nav:first-of-type ul {
+  margin-top: 2em;
+}
+body > header section:first-of-type nav:first-of-type ul li {
+  display: inline-block;
+  text-align: center;
+  padding-left: 4em;
+  color: white;
+}
+body > header section:first-of-type nav:last-of-type {
+  grid-column: 3/4;
+}
+body > header section:first-of-type nav:last-of-type ul li {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -5,3 +5,82 @@ html
     scroll-behavior: smooth;
 }
 
+body
+{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+    & > header
+    {
+        width: 100vw;
+        height: 65vh;
+        background-image: url("assets/img/img-header.jpg");
+        background : linear-gradient(to right, rgba(0,0,255,0.50), rgba(255,0,0, 0.50));
+        
+        section:first-of-type
+        {
+            margin: auto;
+            height: 14vh;
+            width: 100vw;
+            border-bottom: rgba(255,255,255, 0.25) solid 1px;
+            display: grid;
+            grid-template-columns: 0.5fr 2fr 1fr;
+            
+            figure
+            {
+                grid-column: 1 / 2;
+                
+                img
+                {
+                    
+                }
+                
+                figcaption
+                {
+                    
+                    
+                    p
+                    {
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+            nav:first-of-type
+            {
+                grid-column: 2 / 3;
+        
+                ul
+                {
+                    margin-top: 2em;
+    
+                    li
+                    {
+                        display: inline-block;
+                        text-align: center;
+                        padding-left: 4em;
+                        color: white;
+                        
+                    }
+                }
+            }
+            
+            nav:last-of-type
+            {
+                grid-column: 3 / 4;
+                
+                ul
+                {
+                    li
+                    {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
