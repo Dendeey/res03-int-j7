@@ -1,0 +1,13 @@
+body > section{
+    width: 1200px;
+    height: 630px;
+    background-image:url("starwarsdark.jpg");
+    background-attachement: fixed;
+    overflow-y: scroll;
+}
+
+body > section > p{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}

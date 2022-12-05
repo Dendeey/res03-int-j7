@@ -1,0 +1,6 @@
+body>section{
+    width: 600px;
+    height: 630px;
+    background-image:url("starwars.jpg");
+    background-position: right;
+}
