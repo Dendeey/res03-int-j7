@@ -9,11 +9,14 @@ body {
   margin: 0;
   padding: 0;
 }
+body a {
+  text-decoration: none;
+  color: white;
+}
 body > header {
   width: 100vw;
   height: 65vh;
-  background-image: url("assets/img/img-header.jpg");
-  background: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5));
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/1044542385033580605/1049262034186932294/inner-pagebg.jpg");
 }
 body > header section:first-of-type {
   margin: auto;
@@ -25,28 +28,78 @@ body > header section:first-of-type {
 }
 body > header section:first-of-type figure {
   grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 4.5em;
+}
+body > header section:first-of-type figure img {
+  grid-column: 1/2;
+}
+body > header section:first-of-type figure figcaption {
+  grid-column: 2/3;
+  height: 100%;
 }
 body > header section:first-of-type figure figcaption p {
   color: white;
   text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 1em;
+  margin-top: 0.5em;
 }
 body > header section:first-of-type nav:first-of-type {
   grid-column: 2/3;
 }
 body > header section:first-of-type nav:first-of-type ul {
-  margin-top: 2em;
+  padding-left: 0;
+  border-left: rgba(255, 255, 255, 0.25) solid 1px;
+  height: 45%;
 }
 body > header section:first-of-type nav:first-of-type ul li {
   display: inline-block;
-  text-align: center;
-  padding-left: 4em;
+  padding-left: 3em;
   color: white;
+  margin-top: 1em;
 }
 body > header section:first-of-type nav:last-of-type {
   grid-column: 3/4;
 }
+body > header section:first-of-type nav:last-of-type ul {
+  margin-top: 2em;
+  height: 45%;
+}
 body > header section:first-of-type nav:last-of-type ul li {
   display: inline-block;
+  color: white;
+  height: 45%;
+  padding: 0 1em 0 1em;
+}
+body > header section:first-of-type nav:last-of-type ul li:nth-of-type(2) {
+  border-left: rgba(255, 255, 255, 0.25) solid 1px;
+  border-right: rgba(255, 255, 255, 0.25) solid 1px;
+}
+body > header section:last-of-type {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+body > header section:last-of-type h1 {
+  color: white;
+  text-align: center;
+  margin-top: 4em;
+  font-size: 2em;
+  padding-left: 1em;
+}
+body > header section:last-of-type nav {
+  text-align: center;
+  margin-top: 2em;
+}
+body > header section:last-of-type nav ul li {
+  display: inline-block;
+  color: white;
+  padding-left: 1em;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,12 +13,18 @@ body
     margin: 0;
     padding: 0;
     
+    a 
+    { 
+        text-decoration:none; 
+        color: white;
+    }
+    
     & > header
     {
         width: 100vw;
         height: 65vh;
-        background-image: url("assets/img/img-header.jpg");
-        background : linear-gradient(to right, rgba(0,0,255,0.50), rgba(255,0,0, 0.50));
+        background: linear-gradient(to right, rgba(0,0,255,0.50), rgba(255,0,0, 0.50)) ,url("https://cdn.discordapp.com/attachments/1044542385033580605/1049262034186932294/inner-pagebg.jpg");
+       
         
         section:first-of-type
         {
@@ -32,20 +38,28 @@ body
             figure
             {
                 grid-column: 1 / 2;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 4.5em;
                 
                 img
                 {
-                    
+                    grid-column: 1 / 2;
                 }
                 
                 figcaption
                 {
-                    
+                    grid-column: 2 / 3;
+                    height: 100%;
                     
                     p
                     {
                         color: white;
                         text-transform: uppercase;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        padding-left: 1em;
+                        margin-top: 0.5em;
                     }
                 }
             }
@@ -56,14 +70,16 @@ body
         
                 ul
                 {
-                    margin-top: 2em;
+                    padding-left: 0;
+                    border-left: rgba(255,255,255, 0.25) solid 1px;
+                    height: 45%;
     
                     li
                     {
                         display: inline-block;
-                        text-align: center;
-                        padding-left: 4em;
+                        padding-left: 3em;
                         color: white;
+                        margin-top: 1em;
                         
                     }
                 }
@@ -75,10 +91,60 @@ body
                 
                 ul
                 {
+                    margin-top: 2em;
+                    height: 45%;
+                    
                     li
                     {
                         display: inline-block;
+                        color: white;
+                        height: 45%;
+                        padding: 0 1em 0 1em;
                     }
+                    
+                    li:nth-of-type(2)
+                    {
+                        border-left: rgba(255,255,255, 0.25) solid 1px;
+                        border-right: rgba(255,255,255, 0.25) solid 1px;
+                        
+                    }
+                }
+            }
+        }
+        
+        section:last-of-type
+        {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            
+            h1
+            {
+                color: white;
+                text-align: center;
+                margin-top: 4em;
+                font-size: 2em;
+                padding-left: 1em;
+                
+                
+            }
+            
+            nav
+            {
+                text-align: center;
+                margin-top: 2em;
+                
+                ul
+                {
+                    li
+                    {
+                        display: inline-block;
+                        color: white;
+                        padding-left: 1em;
+                        font-size: 1em;
+                    }
+                
                 }
             }
         }
