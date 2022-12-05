@@ -81,7 +81,7 @@ body > header section:first-of-type nav:last-of-type ul li:nth-of-type(2) {
 body > header section:last-of-type {
   height: 100%;
   width: 100%;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 body > header section:last-of-type h1 {
@@ -100,6 +100,36 @@ body > header section:last-of-type nav ul li {
   color: white;
   padding-left: 1em;
   font-size: 1em;
+}
+body > main {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+body > main article {
+  width: 80vw;
+  margin: 0;
+  padding: 0;
+}
+body > main article > header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body > main article > header ul:first-of-type {
+  grid-column: 1/2;
+}
+body > main article > header ul:first-of-type li:first-of-type img {
+  height: 3em;
+  width: 3em;
+}
+body > main article > header ul:first-of-type li {
+  display: inline-block;
+}
+body > main article > header ul:last-of-type {
+  grid-column: 2/3;
+}
+body > main article > header ul:last-of-type li {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
